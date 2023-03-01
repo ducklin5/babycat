@@ -9,6 +9,7 @@ autogen_warning = """/*
 language = "C"
 pragma_once = true
 include_guard = "BABYCAT_H"
+cpp_compat = true
 
 # Convert Rust structs into named typedefs of anonymous C structs.
 # We would turn a Rust `MyType` struct into a C struct `typedef struct { ... } MyType;`
