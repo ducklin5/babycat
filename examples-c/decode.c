@@ -13,8 +13,9 @@ int main() {
   uint32_t num_frames = babycat_waveform_get_num_frames(waveform);
   uint32_t num_channels = babycat_waveform_get_num_channels(waveform);
   uint32_t frame_rate_hz = babycat_waveform_get_frame_rate_hz(waveform);
-  printf("Decoded %u frames with %u channels at %u hz\n", num_frames,
-         num_channels, frame_rate_hz);
+  uint32_t num_samples = babycat_waveform_get_num_samples(waveform);
+  printf("Decoded %u frames with %u channels at %u hz. Total Samples: %u.\n", num_frames,
+         num_channels, frame_rate_hz, num_samples);
 
   return 0;
 }
